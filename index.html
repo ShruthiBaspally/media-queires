@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: none;
+        }
+    .container{
+        width: 100vw;
+        height: 100vh;
+        background-color: antiquewhite;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: scroll;
+        flex-wrap: wrap;
+
+    }
+    .box{
+        width: 300px;
+        height: 400px;
+        background-color: red;
+        background-image: url(https://i.pinimg.com/236x/69/10/66/691066ad1ad55d660660535fa2c28dc8.jpg);
+        background-size: cover;
+        border-radius: 10px;
+        box-shadow: 0 0 20px gray;
+        padding: 20px;
+
+    }
+    .image1{
+        width: 100%;
+    }
+    .heading{
+        color: white;
+        font-size: 25px;
+       
+    }
+    .sub-heading{
+        color: white;
+        text-shadow: 0 0 10px black;
+    }
+    button{
+        background-color: green;
+        color: white;
+        padding: 12px;
+        border-radius: 7px;
+        cursor: pointer;
+        margin-top: 15px;
+        box-shadow: 0 0 10px black;
+    }
+
+
+    @media(max-width:1000px)
+    {
+        .box{
+            background-color: black;
+        }
+    }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1 class="heading">100% Organic Coffee Beans.</h1>
+            <p class="sub-heading">Get the best deal before close.</p>
+            <button>Shop Now -></button>
+        </div>
+    </div>
+
+
+
+
+    
+</body>
+</html>
